@@ -1,0 +1,29 @@
+= Olingo V4 Tutorial p0_all - Fork
+
+This is a fork of the Apache Olingo V4 Tutorial project which contains all tutorial samples.
+
+For more information about the available tutorials for Apache Olingo V4 see the http://olingo.apache.org/doc/odata4/index.html[official Documentation].
+
+The idea of this fork is (actual) to add some additional convenience and/or functionality like
+
+  - The http://www.eclipse.org/jetty/documentation/current/jetty-maven-plugin.html[Jetty Maven Plugin] (see also http://www.eclipse.org/jetty/[Jetty Homepage])
+
+== Use of this tutorial (fork)
+
+Actual simple checkout:
+[source]
+----
+git clone https://github.com/mibo/olingov4-tutorial-all.git
+----
+
+and start via Maven
+[source]
+----
+mvn
+----
+
+afterwards the Olingo based OData service is available at http://localhost:8080
+
+== Prerequisites
+
+NOTE: You need to use Maven 3 and Java 8 for this tutorial.
