@@ -28,18 +28,26 @@
 	<version>4.2.0-SNAPSHOT</version>
 
 	<name>${project.artifactId} Webapp</name>
-
-    <build>
-		<finalName>DemoService</finalName>
-	</build>
-
-    <properties>
+  <properties>
 		<javax.version>2.5</javax.version>
 		<odata.version>4.2.0-SNAPSHOT</odata.version>
 		<slf4j.version>1.7.7</slf4j.version>
+    <version.jetty>9.3.7.v20160115</version.jetty>
 	</properties>
 
-	<dependencies>
+  <build>
+		<finalName>DemoService</finalName>
+    <defaultGoal>jetty:run</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.jetty</groupId>
+        <artifactId>jetty-maven-plugin</artifactId>
+        <version>${version.jetty}</version>
+      </plugin>
+    </plugins>
+	</build>
+
+  <dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>servlet-api</artifactId>
@@ -83,4 +91,5 @@
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
+
 </project>
